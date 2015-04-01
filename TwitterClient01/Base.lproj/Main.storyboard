@@ -90,6 +90,55 @@
             </objects>
             <point key="canvasLocation" x="1010" y="374"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="5Ma-UT-Taf">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="9sQ-1B-PvT" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q7P-bb-i5i"/>
+                        <viewControllerLayoutGuide type="bottom" id="ecJ-of-Eko"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vjt-k1-hCW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FtI-TA-qXM">
+                                <rect key="frame" x="24" y="78" width="48" height="48"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="user name" translatesAutoresizingMaskIntoConstraints="NO" id="g7z-7U-6ES">
+                                <rect key="frame" x="91" y="78" width="213" height="47"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Twieet text" translatesAutoresizingMaskIntoConstraints="NO" id="MS5-UG-Iio">
+                                <rect key="frame" x="25" y="147" width="275" height="254"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pS6-Pw-UHm">
+                                <rect key="frame" x="242" y="409" width="60" height="30"/>
+                                <state key="normal" title="Retwieet">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="retweetAction:" destination="9sQ-1B-PvT" eventType="touchUpInside" id="3SA-oe-vCb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="FtI-TA-qXM" id="QCT-K7-KXw"/>
+                        <outlet property="nameView" destination="g7z-7U-6ES" id="Meb-Qq-dwL"/>
+                        <outlet property="textView" destination="MS5-UG-Iio" id="xRf-f1-yCz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DZn-gP-PsN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1500" y="364"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="Up6-DG-26L">
             <objects>

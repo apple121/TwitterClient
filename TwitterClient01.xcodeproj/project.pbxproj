@@ -14,6 +14,7 @@
 		1F073D821A6A32DE0090ADDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F073D811A6A32DE0090ADDB /* Images.xcassets */; };
 		1F073D851A6A32DE0090ADDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F073D831A6A32DE0090ADDB /* LaunchScreen.xib */; };
 		1F073D911A6A32DF0090ADDB /* TwitterClient01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F073D901A6A32DF0090ADDB /* TwitterClient01Tests.m */; };
+		1F7EA7851A735B6700901B5D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EA7841A735B6700901B5D /* DetailViewController.m */; };
 		1F82D9CA1A6B6AD200D0D829 /* TimeLineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F82D9C91A6B6AD200D0D829 /* TimeLineTableViewController.m */; };
 		1F82D9CD1A6B70DF00D0D829 /* TimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F82D9CC1A6B70DF00D0D829 /* TimeLineCell.m */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,8 @@
 		1F073D8A1A6A32DF0090ADDB /* TwitterClient01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterClient01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F073D8F1A6A32DF0090ADDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F073D901A6A32DF0090ADDB /* TwitterClient01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterClient01Tests.m; sourceTree = "<group>"; };
+		1F7EA7831A735B6700901B5D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		1F7EA7841A735B6700901B5D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		1F82D9C81A6B6AD200D0D829 /* TimeLineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineTableViewController.h; sourceTree = "<group>"; };
 		1F82D9C91A6B6AD200D0D829 /* TimeLineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineTableViewController.m; sourceTree = "<group>"; };
 		1F82D9CB1A6B70DF00D0D829 /* TimeLineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineCell.h; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				1F82D9C91A6B6AD200D0D829 /* TimeLineTableViewController.m */,
 				1F82D9CB1A6B70DF00D0D829 /* TimeLineCell.h */,
 				1F82D9CC1A6B70DF00D0D829 /* TimeLineCell.m */,
+				1F7EA7831A735B6700901B5D /* DetailViewController.h */,
+				1F7EA7841A735B6700901B5D /* DetailViewController.m */,
 			);
 			path = TwitterClient01;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 				TargetAttributes = {
 					1F073D701A6A32DE0090ADDB = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 9D3WS4CURG;
 					};
 					1F073D891A6A32DE0090ADDB = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -234,6 +240,7 @@
 				1F073D7A1A6A32DE0090ADDB /* AppDelegate.m in Sources */,
 				1F82D9CA1A6B6AD200D0D829 /* TimeLineTableViewController.m in Sources */,
 				1F073D771A6A32DE0090ADDB /* main.m in Sources */,
+				1F7EA7851A735B6700901B5D /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +299,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Akihiro Sasaki (FPLUG8V5D5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -312,6 +320,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -333,6 +342,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Akihiro Sasaki (FPLUG8V5D5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -346,6 +356,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -355,9 +366,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TwitterClient01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -365,9 +379,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TwitterClient01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
